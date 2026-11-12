@@ -126,34 +126,6 @@ namespace Lab_CadastroDeProdutos
             }
 
             MessageBox.Show("Produto cadastrado com sucesso!");
-            txtNome.Clear();
-
-            cmbCategoria.SelectedIndex = -1;
-            cmbFornecedor.SelectedIndex = -1;
-
-            numCusto.Value = 0;
-            numVenda.Value = 0;
-
-            txtNome.Focus();
-
-            if (cmbFornecedor.SelectedIndex == -1)
-            {
-                MessageBox.Show("Selecione um fornecedor!");
-                return;
-            }
-            if (numCusto.Value <= 0)
-            {
-                MessageBox.Show("O custo deve ser maior que zero!");
-                numCusto.Focus();
-                return;
-            }
-
-            if (numVenda.Value <= 0)
-            {
-                MessageBox.Show("O preço de venda deve ser maior que zero!");
-                numVenda.Focus();
-                return;
-            }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -177,6 +149,21 @@ namespace Lab_CadastroDeProdutos
 
                 btnLimpar_Click(sender, e);
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
